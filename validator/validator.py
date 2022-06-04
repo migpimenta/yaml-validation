@@ -1,5 +1,5 @@
-import yaml
 from cerberus import Validator
+import yaml
 
 
 def load_doc():
