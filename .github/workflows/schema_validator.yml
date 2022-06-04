@@ -1,6 +1,6 @@
 name: Run YAML validation
 
-on: [push]
+on: [ push ]
 
 jobs:
   build:
@@ -11,6 +11,4 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.8
-            run: |
-              python -m pip install --upgrade pip
-              if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - run: python ./validator/validator.py
