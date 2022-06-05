@@ -1,6 +1,0 @@
-name: customer
-team: customer@com
-resources:
-  - customer-s3-bucket
-  - customer-emr-cluster
-
